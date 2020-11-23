@@ -3,10 +3,9 @@ package dao;
 import java.nio.charset.StandardCharsets;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.SQLException;
 import java.util.Base64;
 
-public class Basedao {
+public class BaseDao {
 
     private static final String DRIVER_CLASS_NAME = "com.mysql.cj.jdbc.Driver";
 
@@ -16,16 +15,16 @@ public class Basedao {
 
     private static final String PASSWORD = "MTIzNDU2";
 
-    private static Basedao instance;
+    private static BaseDao instance;
     private Connection connection;
-    public static Basedao getInstance(){
+    public static BaseDao getInstance(){
         if (instance == null){
-            instance = new Basedao();
+            instance = new BaseDao();
         }
         return instance;
     }
 
-    public Basedao() {
+    public BaseDao() {
         try {
             Class.forName(DRIVER_CLASS_NAME);
             byte[] decode = Base64.getDecoder().decode(PASSWORD);
@@ -39,5 +38,11 @@ public class Basedao {
 
     public Connection getConnection(){
         return connection;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("SQL连接测试");
+        Connection connection = getInstance().connection;
+        System.out.println(connection.toString());
     }
 }

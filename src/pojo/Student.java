@@ -1,34 +1,34 @@
 package pojo;
 
 public class Student {
-    private String stuId;
-    private String stuName;
-    private String stuClass;
+    private String studentId;
+    private String studentName;
+    private String studentClass;
 
     public Student() {
     }
 
-    public String getStuId() {
-        return stuId;
+    public String getStudentId() {
+        return studentId;
     }
 
-    public void setStuId(String stuId) {
-        this.stuId = stuId;
+    public void setStudentId(String studentId) {
+        this.studentId = studentId;
     }
 
-    public String getStuName() {
-        return stuName;
+    public String getStudentName() {
+        return studentName;
     }
 
-    public void setStuName(String stuName) {
-        this.stuName = stuName;
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
     }
 
-    public String getStuClass() {
-        return stuClass;
+    public String getStudentClass() {
+        return studentClass;
     }
 
-    public void setStuClass(String stuClass) {
-        this.stuClass = stuClass;
+    public void setStudentClass(String studentClass) {
+        this.studentClass = studentClass;
     }
 }
