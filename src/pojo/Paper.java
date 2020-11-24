@@ -10,6 +10,12 @@ public class Paper {
     public Paper() {
     }
 
+    public Paper(String paperTitle, String paperDate, String paperAuthor) {
+        this.paperTitle = paperTitle;
+        this.paperDate = paperDate;
+        this.paperAuthor = paperAuthor;
+    }
+
     public String getPaperId() {
         return paperId;
     }

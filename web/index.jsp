@@ -12,6 +12,6 @@
 </head>
 <body>
 <h1>欢迎使用学生论文管理系统</h1>
-
+<input type="button" onclick="window.location.href = '/add.jsp'" value="上传论文">
 </body>
 </html>

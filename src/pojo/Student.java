@@ -8,6 +8,12 @@ public class Student {
     public Student() {
     }
 
+    public Student(String studentId, String studentName, String studentClass) {
+        this.studentId = studentId;
+        this.studentName = studentName;
+        this.studentClass = studentClass;
+    }
+
     public String getStudentId() {
         return studentId;
     }
